@@ -21,7 +21,8 @@ class ChatGPT:
         return cls._instance
 
     def __init__(self):
-        self._ai_token = os.getenv('AI_TOKEN')
+        #self._ai_token = os.getenv('AI_TOKEN')
+        self._ai_token = 'gpt:AQYsVDWbxgi6YXeAUtVeT9pETTp9evueZ9jnWquypVfdowrAVQF1m2ZGFutQBvHocVSPrycUMjJFkblB3TrzUAv_0lOuCD41Q69sLIG87Uz9b9H6oRBXCUGr4uATV6cyuQOthdoH95sUqcBGX8YHnIhPipZf'
         self._proxy = os.getenv('PROXY')
         self._client = self._create_client()
 
